@@ -70,10 +70,10 @@ def testFunction(imgOriginal, imgSecret, room):
     print(tsDiff)
 
 
-#t1 = Thread(target=testFunction("original/small.png", "smallSecret.png", "testingwithhal1"))
-#t2 = Thread(target=testFunction("original/medium.png", "mediumSecret.png", "testingwithhal2"))
+t1 = Thread(target=testFunction("original/small.png", "smallSecret.png", "testingwithhal1"))
+t2 = Thread(target=testFunction("original/medium.png", "mediumSecret.png", "testingwithhal2"))
 t3 = Thread(target=testFunction("original/big.png", "bigSecret.png", "testingwithhal3"))
 
-#t1.start()
-#t2.start()
+t1.start()
+t2.start()
 t3.start()
